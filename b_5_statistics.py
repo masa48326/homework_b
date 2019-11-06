@@ -15,7 +15,7 @@ def sum(numbers):
     return sum_number
 
 
-def maximum(numbers):
+def max(numbers):
     max_number = numbers[0]
     for i in range(1, len(numbers)):
         if max_number < numbers[i]:
@@ -24,7 +24,7 @@ def maximum(numbers):
     return max_number
 
 
-def minimum(numbers):
+def min(numbers):
     min_number = numbers[0]
     for i in range(1, len(numbers)):
         if min_number > numbers[i]:
@@ -33,7 +33,7 @@ def minimum(numbers):
     return min_number
 
 
-def average(numbers):
+def ave(numbers):
     sum_number = sum(numbers)
     return sum_number / len(numbers)
 
@@ -44,6 +44,6 @@ for s in input_str.split(' '):
     number_list.append(int(s))
 
 print(f'合計値: {sum(number_list)}')
-print(f'最大値: {maximum(number_list)}')
-print(f'最小値: {minimum(number_list)}')
-print(f'平均値: {average(number_list)}')
+print(f'最大値: {max(number_list)}')
+print(f'最小値: {min(number_list)}')
+print(f'平均値: {ave(number_list)}')
